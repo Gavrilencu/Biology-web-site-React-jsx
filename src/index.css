@@ -1,13 +1,263 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/*  --------- Header Styles-----------   */
+.logo_mail,.logo_number {
+    width: 4vh;
+}
+.phone {
+    margin-right:20px;
+}
+.email {
+    margin-left: 5px;
+}
+.mail,.number {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+.mail:hover {
+    transform: scale3d(1.05,1.05,0.3);
+}
+.number:hover {
+    transform: scale3d(1.05,1.05,0.3);
+}
+.information {
+    display: flex;
+    align-items: center;
+}
+.background {
+    position: absolute;
+    object-fit:fill;
+    width: 100%;
+    height: 50vh;
+
+
+}
+.submenu {
+    background-color: aliceblue;
+    margin-bottom: 50px;
+    position: relative;
+    margin-top: 38vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 2px 2px 25px rgb(21, 59, 142);
+}
+.list {
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-inline: 5vh;
+    transition:0.4s;
+}
+.list:hover {
+    background-color: rgb(255, 255, 255);
+    transform:scale3d(1.05,1.05,0.3);
+    color: rgb(43, 136, 195);
+    border-radius: 10px;
+}
+.header {
+    box-shadow: 2px 2px 25px rgb(21, 59, 142);
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.808);
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 13vh;
+    
+}
+.logo {
+    width: 19vh;
+    transition:0.5s;
+}
+.logo:hover {
+    transform:scale3d(1.04,1.04,0.3)
+}
+.producatori {
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    transition:0.5s;
+}
+.producatori:hover {
+    transform: scale3d(1.04,1.04,0.3);
+    color:rgb(55, 135, 226);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/*  ---------- Body STYLES--------   */
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box_image {
+    width: 40vh;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.name {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    width: 40vh;
+}
+.produse {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.produs {
+    box-shadow: 2px 2px 25px rgb(199, 202, 210);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(241, 246, 250, 0.793);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:30px;
+    transition:0.5s;
+}
+.produs:hover {
+    background-color: rgb(195, 224, 255);
+    transform: scale3d(1.05,1.05,0.3);
+}
+
+.home_title {
+    font-size: 30px;
+}
+
+.app {
+    position: relative;
+    z-index: 1
+    
+    ;
+}
+.home {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 50px;
+}
+
+
+
+
+
+
+
+/*  ---------- Footer STYLES--------   */
+.footer {
+    margin-top: 10vh;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    align-items: center;
+}
+.subfooter {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    justify-content: space-around;
+}
+.left_footer,.right_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.copiright {
+
+    color: white;
+}
+.fot {
+
+    margin: 30px;
+    color: white;
+}
+/*   stilizam open modal  */
+
+
+.openmodal {
+    cursor: pointer;
+    border: red;
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+}
+.popup {
+    width: 100%;
+    display: none;
+    position: absolute;
+}
+.modal-backdrop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    z-index: 1;
+
+
+}
+.closemodal {
+    font-size: 20px;
+    border: 1px solid rgb(180, 180, 180);
+    padding-inline:5px;
+}
+.mod {
+
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+.mod:hover {
+    transform:scale3D(1.05,1.05,0.3);
+    color: aqua;
+}
+.modal {
+    border-radius: 10px;
+    padding: 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(65, 65, 65, 0.748);
+
+}
+/* Resposiv Design */
+@media screen and (max-width: 800px) {
+.popup {
+    display: block;
+    margin-left: 5vh;
+}
+.submenu {
+    display: none;
+}
+.information {
+    display: none;
+}
+.home {
+    margin-top: 40vh;
+}
 }
